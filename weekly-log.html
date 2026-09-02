@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team 3 | Weekly Log</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="site-title">Team 3</span>
+      <nav class="site-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="weekly-log.html" class="nav-link active">Weekly Log</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="log">
+      <h1>Weekly Log</h1>
+      <p class="log-intro">Progress updates from the team, newest first.</p>
+
+      <!--
+        HOW TO ADD A NEW WEEK:
+        Copy one whole <article class="log-entry"> ... </article> block
+        and paste it directly below this comment (so newest stays on top).
+        Then update the date, media, and description.
+
+        For a picture, use:
+          <img src="path/to/photo.jpg" alt="Description of the photo">
+
+        For a video, use:
+          <video controls src="path/to/video.mp4"></video>
+      -->
+
+      <article class="log-entry">
+        <h2 class="log-date">Week of September 8, 2026</h2>
+        <div class="log-media">
+          <img src="https://placehold.co/400x280/1d3557/f4f1ea?text=Progress+Photo" alt="Placeholder progress photo">
+          <img src="https://placehold.co/400x280/1d3557/f4f1ea?text=Progress+Photo" alt="Placeholder progress photo">
+        </div>
+        <p class="log-description">
+          Placeholder description of this week's progress. Summarize what was built,
+          tested, or designed, and note any blockers or next steps.
+        </p>
+      </article>
+
+      <article class="log-entry">
+        <h2 class="log-date">Week of September 1, 2026</h2>
+        <div class="log-media">
+          <video controls poster="https://placehold.co/400x280/1d3557/f4f1ea?text=Video+Preview">
+            <source src="path/to/video.mp4" type="video/mp4">
+            Your browser does not support embedded video.
+          </video>
+          <img src="https://placehold.co/400x280/1d3557/f4f1ea?text=Progress+Photo" alt="Placeholder progress photo">
+        </div>
+        <p class="log-description">
+          Placeholder description of this week's progress. Summarize what was built,
+          tested, or designed, and note any blockers or next steps.
+        </p>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Team 3 &middot; Lunabotics</p>
+  </footer>
+
+</body>
+</html>
