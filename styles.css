@@ -197,13 +197,25 @@ section {
   margin-bottom: 16px;
 }
 
-.log-media img,
-.log-media video {
+.media-item {
   width: 100%;
   max-width: 320px;
+  flex: 1 1 280px;
+  margin: 0;
+}
+
+.media-item img,
+.media-item video {
+  width: 100%;
   border-radius: 6px;
   border: 1px solid var(--border);
-  flex: 1 1 280px;
+  display: block;
+}
+
+.media-item figcaption {
+  color: var(--grey);
+  font-size: 0.85rem;
+  margin-top: 6px;
 }
 
 .log-description {
