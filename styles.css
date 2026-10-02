@@ -212,10 +212,47 @@ section {
   display: block;
 }
 
+.media-item img {
+  cursor: zoom-in;
+}
+
 .media-item figcaption {
   color: var(--grey);
   font-size: 0.85rem;
   margin-top: 6px;
+}
+
+/* Lightbox */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(18, 35, 60, 0.92);
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 40px;
+}
+
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 6px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  color: var(--cream);
+  font-size: 2rem;
+  cursor: pointer;
+  line-height: 1;
 }
 
 .log-description {

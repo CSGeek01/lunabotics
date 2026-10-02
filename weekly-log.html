@@ -50,8 +50,32 @@
               <a href="https://auburn.box.com/s/y1ukqwrq6o53gdmx1fla8vzkea0sk7zo" target="_blank">
                 Live Access of Gantt Chart via Excel
               </a>
+              <br>This chart was incorporated by taking a screenshot and adding it here as an image.
             </figcaption>
         </div>
+      </article>
+
+      <article class="log-entry">
+        <h2 class="log-date">Week of October 2, 2026</h2>
+        <div class="log-media">
+          <figure class="media-item">
+            <img src="images/oakdprow.png">
+            <figcaption>The OAK-D Pro W, an option for our localization device.</figcaption>
+          </figure>
+          <figure class="media-item">
+            <img src="images/oak4dpro.png">
+            <figcaption>The OAK 4 D Pro, an option for our localization device.</figcaption>
+          </figure>
+          <figure class="media-item">
+            <img src="images/limelight4.jpg">
+            <figcaption>The Limelight 4, an option for our localization device.</figcaption>
+          </figure>
+        </div>
+        <p class="log-description">
+          This week we completed our first initial deliverables for NASA: the Statement of Rights, Statement of Support - Faculty,
+          Statement of Support - Institution, and Project Management Plan (PMP). We also researched and found several options for
+          localization devices.
+        </p>
       </article>
 
       <article class="log-entry">
@@ -145,6 +169,38 @@
       was used in the following way in this assignment: generating a fillable website template.
     </p>
   </footer>
+
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+ 
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxClose = document.getElementById('lightbox-close');
+ 
+    document.querySelectorAll('.media-item img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('open');
+      });
+    });
+ 
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightboxImg.src = '';
+    }
+ 
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
 
 </body>
 </html>
